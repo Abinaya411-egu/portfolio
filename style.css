@@ -1,0 +1,358 @@
+/* ===============================
+   GOOGLE FONT
+================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===============================
+   BODY
+================================= */
+
+body{
+    background:#f5f9ff;
+    color:#222;
+    line-height:1.6;
+}
+
+/* ===============================
+   NAVBAR
+================================= */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#ffffff;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#0d6efd;
+}
+
+.logo span{
+    color:#222;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#222;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#0d6efd;
+}
+
+/* ===============================
+   HERO SECTION
+================================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:90%;
+    margin:auto;
+    padding-top:100px;
+}
+
+.hero-text{
+    width:55%;
+}
+
+.hero-text h3{
+    font-size:25px;
+    color:#0d6efd;
+}
+
+.hero-text h1{
+    font-size:60px;
+    margin:10px 0;
+}
+
+.hero-text h2{
+    color:#555;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    color:#666;
+    margin-bottom:30px;
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+
+.btn{
+    display:inline-block;
+    background:#0d6efd;
+    color:white;
+    padding:12px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    margin-right:15px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#084298;
+}
+
+.btn2{
+    background:white;
+    color:#0d6efd;
+    border:2px solid #0d6efd;
+}
+
+.btn2:hover{
+    background:#0d6efd;
+    color:white;
+}
+
+/* ===============================
+   PROFILE IMAGE
+================================= */
+
+.hero-image{
+    width:40%;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid white;
+    box-shadow:0 0 30px rgba(13,110,253,.3);
+}
+
+/* ===============================
+   SECTION
+================================= */
+
+section{
+    width:90%;
+    margin:auto;
+    padding:80px 0;
+}
+
+section h2{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+/* ===============================
+   CARD
+================================= */
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* ===============================
+   SKILLS
+================================= */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.skills span{
+    background:#0d6efd;
+    color:white;
+    padding:12px 18px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.skills span:hover{
+    background:#084298;
+}
+
+/* ===============================
+   CERTIFICATES
+================================= */
+
+#certificates ul{
+    max-width:700px;
+    margin:auto;
+}
+
+#certificates li{
+    background:white;
+    margin-bottom:15px;
+    padding:18px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* ===============================
+   CONTACT
+================================= */
+
+#contact p{
+    text-align:center;
+    margin-bottom:18px;
+    font-size:18px;
+}
+
+#contact a{
+    color:#0d6efd;
+    text-decoration:none;
+}
+
+#contact a:hover{
+    text-decoration:underline;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media(max-width:992px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-text{
+    width:100%;
+}
+
+.hero-image{
+    width:100%;
+    margin-bottom:40px;
+}
+
+.hero-image img{
+    width:260px;
+    height:260px;
+}
+
+.nav-links{
+    display:none;
+}
+
+.hero-text h1{
+    font-size:45px;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero-text h1{
+    font-size:35px;
+}
+/* Certificate Section */
+
+.certificate-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.certificate-card{
+    width:300px;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.certificate-card:hover{
+    transform:translateY(-10px);
+}
+
+.certificate-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.certificate-card h3{
+    text-align:center;
+    padding:15px;
+    color:#0d6efd;
+}
+
+.hero-text h2{
+    font-size:20px;
+}
+
+.btn{
+    display:block;
+    margin:15px auto;
+    width:220px;
+    text-align:center;
+}
+
+section h2{
+    font-size:28px;
+}
+
+}
